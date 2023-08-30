@@ -5,6 +5,20 @@ body {
   background: rgba(17, 10, 29, 1);
 }
 
+button {
+  display: flex;
+  justify-content: center;
+  padding: 14px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-radius: 24px;
+  border: 2px solid #478bf9;
+  background: transparent;
+  color: #ffffff;
+}
+
 .header {
   margin: 16px 140px 0;
   border: 2px solid #478bf9;
@@ -62,18 +76,7 @@ body {
 }
 
 .btn {
-  display: flex;
-  justify-content: center;
   margin-right: 14px;
-  padding: 14px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  border-radius: 24px;
-  border: 2px solid #478bf9;
-  background: transparent;
-  color: #ffffff;
 }
 
 .btn img {
@@ -88,3 +91,98 @@ body {
 }
 
 /* main */
+
+.main {
+  display: flex;
+  margin: 8px 140px 0;
+}
+
+.main-title {
+  width: 600px;
+  margin-top: 295px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 96px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.title-colored {
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 96px;
+  text-transform: uppercase;
+  color: #478bf9;
+}
+
+.description {
+  margin-top: 24px;
+  margin-bottom: 48px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 32px;
+  color: #ffffff99;
+}
+
+.main-btn {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.banner-container {
+  display: flex;
+  width: 100%;
+  height: 100px;
+}
+
+.banner-item {
+  animation: fish-swim 2s alternate infinite;
+}
+
+@keyframes fish-swim {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+
+.main-blog {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 296px;
+  margin-left: 70px;
+}
+
+.blog-title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.blog {
+  margin-top: 24px;
+  padding: 24px 40px 24px 24px;
+  border: 3px solid #478bf9;
+  border-radius: 60px;
+}
+
+.blog-item {
+  margin-bottom: 16px;
+}
+
+.blog-message {
+  color: #ffffff;
+}
+
+.blog-date {
+  color: rgba(255, 255, 255, 0.6);
+}
