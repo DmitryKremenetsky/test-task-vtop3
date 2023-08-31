@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+    />
     <link rel="stylesheet" href="./index.css" />
     <title>Document</title>
   </head>
@@ -28,6 +32,7 @@
       </div>
     </header>
     <main class="main">
+      <div class="dot-light"></div>
       <div class="main-title">
         <h2 class="title">
           House Of <span class="title-colored">Gambling</span>
@@ -36,11 +41,11 @@
         <button class="main-btn">Become a Partner</button>
       </div>
       <div class="main-banner">
-        <div class="banner-container">
+        <div class="waterfall-container">
           <div class="banner-item">
             <img src="./assets/Line_Vertical_1.png" alt="line" />
           </div>
-          <div class="banner-item">
+          <div class="banner-item appear">
             <img src="./assets/line-2.png" alt="line" />
           </div>
           <div class="banner-item">
@@ -81,10 +86,16 @@
             </h4>
             <p class="blog-date">10.02.2023</p>
           </div>
+          <div class="blog-item">
+            <h4 class="blog-message">
+              Payment methods: Skrill, Neteller, webmoney, Bank transfer
+            </h4>
+            <p class="blog-date">10.02.2023</p>
+          </div>
         </div>
       </div>
     </main>
-    <footer class="footer-contaier">
+    <footer class="footer-container">
       <div class="footer">
         <ul class="footer-list">
           <li>Terms & Conditions</li>
@@ -106,6 +117,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>

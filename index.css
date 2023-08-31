@@ -2,6 +2,7 @@
 @import url("./reset.css");
 
 body {
+  font-family: Lexend;
   background: rgba(17, 10, 29, 1);
 }
 
@@ -40,6 +41,7 @@ button {
 .navigation-list {
   display: flex;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .navigation-list li {
@@ -77,6 +79,7 @@ button {
 
 .btn {
   margin-right: 14px;
+  cursor: pointer;
 }
 
 .btn img {
@@ -94,12 +97,13 @@ button {
 
 .main {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 8px 140px 0;
 }
 
 .main-title {
-  width: 600px;
-  margin-top: 295px;
+  width: 669px;
 }
 
 .title {
@@ -131,32 +135,59 @@ button {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
+  cursor: pointer;
 }
 
-.banner-container {
-  display: flex;
-  width: 100%;
-}
-
-.banner-item {
-  animation: fish-swim 2s alternate infinite;
-}
-
-@keyframes fish-swim {
+@keyframes waterfall {
   0% {
-    transform: translateY(0);
+    transform: translateY(-80%);
+    opacity: 0;
   }
   100% {
-    transform: translateY(50px);
+    transform: translateY(-1%);
+    opacity: 1;
   }
+}
+
+@keyframes appearFromBottom {
+  0% {
+    transform: translateY(80%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(1%);
+    opacity: 1;
+  }
+}
+
+.waterfall-container {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-banner {
+  display: flex;
+  margin-left: 42px;
+  margin-right: 64px;
+}
+
+.banner-item:nth-child(1) {
+  animation: waterfall 12s ease-out infinite alternate;
+}
+
+.banner-item:nth-child(2) {
+  animation: appearFromBottom 12s ease-out infinite alternate;
+}
+
+.banner-item:nth-child(3) {
+  animation: waterfall 12s ease-out infinite alternate;
 }
 
 .main-blog {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 296px;
-  margin-left: 70px;
 }
 
 .blog-title {
@@ -168,31 +199,44 @@ button {
 }
 
 .blog {
+  max-width: 531px;
+  max-height: 595px;
   margin-top: 24px;
-  padding: 24px 40px 24px 24px;
+  padding: 24px 40px 0 24px;
   border: 3px solid #478bf9;
   border-radius: 60px;
+  overflow: hidden;
 }
 
 .blog-item {
+  max-width: 467px;
+  padding: 16px 64px;
   margin-bottom: 16px;
+  border-radius: 62px;
+  background: rgba(30, 18, 49, 1);
 }
 
 .blog-message {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
   color: #ffffff;
 }
 
 .blog-date {
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 15px;
   color: rgba(255, 255, 255, 0.6);
 }
 
 /* footer */
 
-.footer-contaier {
-  height: 130px;
+.footer-container {
   border: 3px solid #478bf9;
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
+  position: relative;
 }
 
 .footer {
@@ -205,6 +249,7 @@ button {
 .footer-list {
   display: flex;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .footer-list li {
