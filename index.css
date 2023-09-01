@@ -59,6 +59,7 @@ button:hover {
 }
 
 .burger-menu {
+  display: none;
   position: relative;
   width: 30px;
   height: 100%;
@@ -79,6 +80,10 @@ button:hover {
   list-style: none;
   padding: 0;
   margin-top: 34px;
+}
+
+.menu {
+  display: none;
 }
 
 .menu li {
@@ -433,7 +438,12 @@ button:hover {
     position: fixed;
   }
 
+  .burger-menu {
+    display: block;
+  }
+
   .menu {
+    display: block;
     background-color: #110a1d;
     position: fixed;
     top: 85px;
@@ -456,7 +466,7 @@ button:hover {
   }
 
   .menu-btn button {
-    margin-bottom: 5px;
+    margin-bottom: 0;
   }
 
   .language-btn {
