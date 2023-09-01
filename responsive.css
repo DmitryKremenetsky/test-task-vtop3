@@ -1,17 +1,169 @@
-@import url(./index.css);
-
-body {
-  font-family: "Lexend", sans-serif;
-  background: rgba(17, 10, 29, 1);
-  margin: 0;
-}
+/*media query */
 
 @media (max-width: 768px) {
+  .container {
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+
+  .line-light {
+    display: none;
+  }
+
+  .dot-light-circle {
+    display: none;
+  }
+
   .header {
     margin: 10px;
   }
 
+  .logo {
+    width: 54px;
+    height: 18px;
+    margin-right: 154px;
+  }
+
+  .navigation {
+    padding: 10px 14px;
+  }
+
+  .screen-noscroll.active {
+    content: "";
+    position: fixed;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .menu {
+    display: block;
+    background-color: #110a1d;
+    position: fixed;
+    top: 85px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+  .menu.active {
+    transform: translateX(0);
+  }
+
+  .menu-btn {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px 0;
+  }
+
+  .menu-btn button {
+    margin-bottom: 0;
+  }
+
+  .language-btn {
+    display: none;
+  }
+
+  .btn {
+    display: none;
+    margin-right: 4px;
+  }
+
+  #language-toggle::before {
+    content: "";
+    margin-left: 2px;
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 19px;
+    height: 19px;
+    background-image: url("./assets/icon-planet.png");
+    background-repeat: no-repeat;
+  }
+
   .navigation-list {
     display: none;
+  }
+
+  .main {
+    flex-direction: column;
+    margin: 70px 10px;
+  }
+
+  .main-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 50px;
+  }
+
+  .title-colored {
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 50px;
+  }
+
+  .description {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .main-banner {
+    margin: 32px 0 32px;
+    height: 300px;
+  }
+
+  .waterfall-container {
+    position: absolute;
+    transform: translate(-30%, -35%) rotate(90deg);
+  }
+
+  .blog-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .blog {
+    padding: 10px 16px 0 10px;
+  }
+
+  .blog-item {
+    padding: 15px 35px;
+  }
+
+  .blog-message {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .blog-date {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: baseline;
+    margin: 20px;
+  }
+
+  .footer-list {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .icon-title {
+    justify-content: start;
   }
 }
