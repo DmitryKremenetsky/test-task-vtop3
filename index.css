@@ -428,8 +428,9 @@ button:hover {
     padding: 10px 14px;
   }
 
-  .screen-noscroll {
-    overflow: hidden;
+  .screen-noscroll.active {
+    content: "";
+    position: fixed;
   }
 
   .menu {
