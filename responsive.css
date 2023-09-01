@@ -1,0 +1,17 @@
+@import url(./index.css);
+
+body {
+  font-family: "Lexend", sans-serif;
+  background: rgba(17, 10, 29, 1);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin: 10px;
+  }
+
+  .navigation-list {
+    display: none;
+  }
+}
