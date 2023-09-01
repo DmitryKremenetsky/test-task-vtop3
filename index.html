@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="./index.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="screen-noscroll">
     <img class="line-light" src="./assets/line-light.png" alt="" />
     <img class="dot-light-circle" src="./assets/dot-light.png" alt="" />
     <div class="container">
+      <div class="burger-overlay"></div>
       <header class="header">
         <div class="navigation">
           <div class="logo"></div>
@@ -22,9 +23,30 @@
             <li>Careers</li>
           </ul>
           <div class="navigation-btn">
-            <button class="btn" id="language-toggle">en</button>
+            <button class="btn" id="language-toggle">
+              <span class="language-btn">en</span>
+            </button>
             <button class="btn">log in</button>
-            <button class="btn">sing up</button>
+            <button class="btn">sign up</button>
+          </div>
+          <div class="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="menu">
+            <ul class="menu-list">
+              <li><a href="">About us</a></li>
+              <li><a href="">Brands</a></li>
+              <li><a href="">Commissions</a></li>
+              <li><a href="">News</a></li>
+              <li><a href="">Contact us</a></li>
+              <li><a href="">Careers</a></li>
+            </ul>
+            <div class="menu-btn">
+              <button>log in</button>
+              <button>sign up</button>
+            </div>
           </div>
         </div>
       </header>
