@@ -294,13 +294,37 @@ button:hover {
 }
 
 .blog {
+  display: flex;
   max-width: 531px;
   max-height: 595px;
   margin-top: 24px;
-  padding: 24px 40px 0 24px;
+  padding: 24px 16px 0 24px;
   border: 3px solid #478bf9;
   border-radius: 60px;
   overflow: hidden;
+}
+
+.scroll-container {
+  max-width: 467px;
+  max-height: 632px;
+  padding-right: 16px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.scroll-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #478bf9;
+  border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  margin-block: 4em;
+  border-radius: 10px;
+  background-color: #ffffff1f;
 }
 
 .blog-item {

@@ -134,7 +134,11 @@
   }
 
   .blog {
-    padding: 10px 16px 0 10px;
+    padding: 10px 6px 0 10px;
+  }
+
+  .scroll-container {
+    padding-right: 6px;
   }
 
   .blog-item {
