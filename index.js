@@ -3,6 +3,7 @@ const burgerToggle = document.querySelector(".burger-menu");
 const burgerMenu = document.querySelector(".menu");
 const menuOverFlow = document.querySelector(".screen-noscroll");
 const burgerToggleActive = document.querySelector("burger-menu.active");
+const btnTracker = document.querySelectorAll(".btn");
 
 let currentLanguage = "en";
 
@@ -31,4 +32,10 @@ burgerToggle.addEventListener("click", () => {
     burgerMenu.classList.add("active");
     menuOverFlow.classList.add("active");
   }
+});
+
+btnTracker.forEach((btn) => {
+  const link = btn.getAttribute("data-link");
+
+  window.location.href = link;
 });

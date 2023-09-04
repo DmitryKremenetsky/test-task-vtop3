@@ -138,7 +138,12 @@ button:hover {
   position: relative;
 }
 
-.navigation-list li:hover {
+.navigation-list a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navigation-list a:hover {
   color: #478bf9;
 }
 
@@ -367,8 +372,12 @@ button:hover {
 
 .footer-list {
   display: flex;
-  color: #ffffff;
   cursor: pointer;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .footer-list li {
@@ -380,7 +389,7 @@ button:hover {
   position: relative;
 }
 
-.footer-list li:hover {
+.footer-list a:hover {
   color: #478bf9;
 }
 
@@ -420,7 +429,7 @@ button:hover {
 
 .social-icon img.color-change {
   mix-blend-mode: color;
-  transition: mix-blend-mode 0.3s;
+  transition: mix-blend-mode 0.5s;
 }
 
 .social-icon img.color-change:hover {
