@@ -63,10 +63,15 @@
     display: flex;
     flex-direction: column;
     padding: 30px 10px 0;
+    gap: 5px;
   }
 
   .menu-btn button {
     margin-bottom: 0;
+  }
+
+  .menu-btn a {
+    padding: 0;
   }
 
   .language-btn {

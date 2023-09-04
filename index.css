@@ -176,6 +176,11 @@ button:hover {
   cursor: pointer;
 }
 
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .btn:last-child {
   margin-right: 0px;
 }
@@ -238,6 +243,11 @@ button:hover {
   font-size: 24px;
   line-height: 32px;
   cursor: pointer;
+}
+
+.main-btn a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .waterfall-container {
