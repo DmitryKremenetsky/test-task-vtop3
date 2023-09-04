@@ -7,11 +7,16 @@
   }
 
   .line-light {
-    display: none;
+    content: url(./assets/line-light-small.png);
+    width: 100%;
+    top: 38px;
   }
 
   .dot-light-circle {
-    display: none;
+    content: url(./assets/dot-light-small.png);
+    width: 100%;
+    bottom: 0;
+    top: auto;
   }
 
   .header {
@@ -139,6 +144,10 @@
 
   .scroll-container {
     padding-right: 6px;
+  }
+
+  .scroll-container::-webkit-scrollbar {
+    width: 4px;
   }
 
   .blog-item {

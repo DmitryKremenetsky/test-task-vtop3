@@ -27,20 +27,21 @@ button:hover {
 
 .container {
   position: relative;
+  z-index: 5;
 }
 
 .line-light {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: -1;
 }
 
 .dot-light-circle {
   position: absolute;
-  top: 94px;
+  top: 76px;
   right: 0;
-  z-index: 0;
+  z-index: -1;
 }
 
 .header {
