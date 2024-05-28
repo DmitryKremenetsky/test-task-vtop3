@@ -353,6 +353,7 @@ button:active {
   margin-bottom: 16px;
   border-radius: 62px;
   background: #311212;
+  cursor: pointer;
 }
 
 .blog-item:hover {
