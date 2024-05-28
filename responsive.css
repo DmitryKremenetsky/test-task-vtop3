@@ -13,7 +13,7 @@
   }
 
   .dot-light-circle {
-    content: url(./assets/dot-light-small.png);
+    content: url();
     width: 100%;
     bottom: 0;
     top: auto;
@@ -31,11 +31,17 @@
 
   .navigation {
     padding: 10px 14px;
+    justify-content: end;
+  }
+
+  .navigation-list {
+    display: none;
   }
 
   .screen-noscroll.active {
     content: "";
     position: fixed;
+    width: 100%;
   }
 
   .burger-menu {
@@ -44,7 +50,7 @@
 
   .menu {
     display: block;
-    background-color: #110a1d;
+    background-color: #191D0A;
     position: fixed;
     top: 85px;
     right: 0;
@@ -59,6 +65,10 @@
     transform: translateX(0);
   }
 
+  .menu-list li:active {
+    background-color: #F97247;
+  }
+
   .menu-btn {
     display: flex;
     flex-direction: column;
@@ -68,6 +78,13 @@
 
   .menu-btn button {
     margin-bottom: 0;
+    background: #311212;
+    border: 2px solid #EBF29D;
+  }
+
+  .menu-btn button:active {
+    background-color: #F97247;
+    border: 2px solid #F97247;
   }
 
   .menu-btn a {
@@ -81,21 +98,19 @@
   .btn {
     display: none;
     margin-right: 4px;
+    padding: 6px;
   }
 
   #language-toggle::before {
     content: "";
-    margin-left: 2px;
+    margin-left: 3px;
+    margin-top: 3px;
     margin-right: 0;
     margin-bottom: 0;
     width: 19px;
     height: 19px;
-    background-image: url("./assets/icon-planet.png");
+    background-image: url("./assets/world.png");
     background-repeat: no-repeat;
-  }
-
-  .navigation-list {
-    display: none;
   }
 
   .main {
